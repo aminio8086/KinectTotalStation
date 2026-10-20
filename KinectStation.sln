@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectStation.Core", "src\KinectStation.Core\KinectStation.Core.csproj", "{04B81812-EFC1-4AB8-A26D-FC147D5B4180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectStation.Wpf", "src\KinectStation.Wpf\KinectStation.Wpf.csproj", "{2E3BD143-3F27-4A14-8D77-0D3AF22C0449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectStation.Core.SmokeTests", "tests\KinectStation.Core.SmokeTests\KinectStation.Core.SmokeTests.csproj", "{7E70E924-ACFC-47EF-A780-9E5BBE6ED45D}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {04B81812-EFC1-4AB8-A26D-FC147D5B4180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {04B81812-EFC1-4AB8-A26D-FC147D5B4180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {04B81812-EFC1-4AB8-A26D-FC147D5B4180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {04B81812-EFC1-4AB8-A26D-FC147D5B4180}.Release|Any CPU.Build.0 = Release|Any CPU
+        {2E3BD143-3F27-4A14-8D77-0D3AF22C0449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {2E3BD143-3F27-4A14-8D77-0D3AF22C0449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {2E3BD143-3F27-4A14-8D77-0D3AF22C0449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {2E3BD143-3F27-4A14-8D77-0D3AF22C0449}.Release|Any CPU.Build.0 = Release|Any CPU
+        {7E70E924-ACFC-47EF-A780-9E5BBE6ED45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {7E70E924-ACFC-47EF-A780-9E5BBE6ED45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {7E70E924-ACFC-47EF-A780-9E5BBE6ED45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {7E70E924-ACFC-47EF-A780-9E5BBE6ED45D}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+EndGlobal
