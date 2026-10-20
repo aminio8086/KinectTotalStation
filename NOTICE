@@ -1,0 +1,24 @@
+Kinect Station
+
+Copyright (c) Amin Amini.
+
+Associated publication:
+
+Amin Amini
+"Kinect Station: Using Microsoft Kinect v2 as a Total Station Theodolite for
+Distance and Angle Determination in a 3D Cartesian Environment"
+2024 International Congress on Human-Computer Interaction, Optimization and
+Robotic Applications (HORA)
+https://doi.org/10.1109/HORA61326.2024.10550801
+
+This repository is a cleaned research-software release reconstructed from the
+author's historical KinectTotalStation project.
+
+The historical prototype was developed from Microsoft Kinect v2 sample-code
+lineage and uses the Microsoft Kinect for Windows SDK v2. Microsoft Kinect SDK
+software and binaries are not redistributed in this repository and remain
+subject to Microsoft's applicable licence terms.
+
+The cleaned source authored for this repository is licensed under the Apache
+License, Version 2.0. The associated IEEE publication is a separate copyrighted
+work.
