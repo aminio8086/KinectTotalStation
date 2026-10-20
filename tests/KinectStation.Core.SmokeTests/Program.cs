@@ -87,7 +87,10 @@ static void TestHistoricalProjection()
             2000);
 
     AssertNear(
-        (2000.0 * 100.0 / HistoricalProjection.HorizontalFocalValue) / 1000.0,
+        (2000.0 *
+            (100.0 - HistoricalProjection.HistoricalHorizontalPixelOffset) /
+            HistoricalProjection.HorizontalFocalValue) /
+        1000.0,
         point.X,
         1e-12,
         "Historical X projection");

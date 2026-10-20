@@ -64,11 +64,13 @@ That file export is unrelated to the distance equation and can create a very lar
 
 The cleaned distance method contains no I/O side effects.
 
-## Old UI offset
+## Historical horizontal correction
 
-The recovered WPF layout stores selected X coordinates with a `-20` adjustment. The image itself is also placed with a margin in the historical XAML.
+The recovered measurement path repeatedly uses `clickPoint.X - 20` before calculating the X coordinate.
 
-The cleaned interface overlays the measurement canvas directly on the depth image, so the layout offset is no longer required.
+Although the old XAML also contains layout margins, the source does not establish that the 20-pixel correction is purely a presentation offset. To avoid changing the recovered research behaviour on an unsupported assumption, the cleaned release preserves it as `HistoricalHorizontalPixelOffset = 20`.
+
+This is intentionally documented as a historical implementation constant rather than a newly justified calibration parameter.
 
 ## Microsoft sample lineage
 

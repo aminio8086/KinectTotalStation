@@ -18,6 +18,13 @@ namespace KinectStation.Core
         public const double HorizontalFocalValue = 365.605;
         public const double VerticalFocalValue = 367.194;
 
+        /// <summary>
+        /// Horizontal correction present throughout the recovered measurement
+        /// path. Its original rationale is not documented, so it is preserved
+        /// rather than reinterpreted.
+        /// </summary>
+        public const int HistoricalHorizontalPixelOffset = 20;
+
         public static Point3D ToCartesianMetres(
             int pixelX,
             int pixelY,
@@ -44,8 +51,12 @@ namespace KinectStation.Core
                     "Depth must be greater than zero.");
             }
 
+            double correctedPixelX =
+                pixelX - HistoricalHorizontalPixelOffset;
+
             double x =
-                (depthMillimetres * pixelX / HorizontalFocalValue) / 1000.0;
+                (depthMillimetres * correctedPixelX / HorizontalFocalValue) /
+                1000.0;
 
             double y =
                 (depthMillimetres * pixelY / VerticalFocalValue) / 1000.0;

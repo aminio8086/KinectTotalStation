@@ -23,7 +23,7 @@ All notable changes to this cleaned research-software release will be documented
 - Reconstructed the release from the private `KinectTotalStation` research repository.
 - Replaced the old Microsoft sample namespace/project identity with `KinectStation`.
 - Separated sensor/UI code from measurement mathematics.
-- Removed the WPF layout-specific horizontal coordinate offset from the measurement projection.
+- Preserved the recovered 20-pixel horizontal projection correction as an explicit historical constant.
 - Kept points C and D distinct when the fourth point is selected, correcting the historical point-C overwrite before area calculation.
 - Removed depth-buffer text-file export from the distance-calculation path.
 - Removed generated, compiled and IDE-specific files from the release.

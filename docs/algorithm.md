@@ -18,14 +18,14 @@ vertical focal value   = 367.194
 For a selected pixel `(x, y)` and depth `d` in millimetres, the active historical equations correspond to:
 
 ```text
-X = (d * x / 365.605) / 1000
+X = (d * (x - 20) / 365.605) / 1000
 Y = (d * y / 367.194) / 1000
 Z = d / 1000
 ```
 
 The resulting coordinates are in metres.
 
-The old WPF code subtracted 20 pixels from the horizontal screen coordinate because its overlay and image layout were offset. The cleaned UI aligns its image and overlay, so that presentation-specific correction is not part of `HistoricalProjection`.
+The recovered source applies the 20-pixel horizontal correction consistently in the interactive measurement path. Its original rationale is not documented. The cleaned release therefore preserves it explicitly as `HistoricalHorizontalPixelOffset` rather than assuming it was only a UI-layout artefact.
 
 ## Distance
 

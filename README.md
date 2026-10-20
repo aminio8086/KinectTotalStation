@@ -53,7 +53,7 @@ The original research code used the Kinect v2 depth frame dimensions and fixed f
 - horizontal focal value: **365.605**;
 - vertical focal value: **367.194**.
 
-For a selected depth pixel, the historical implementation derived a 3-D point from pixel position and depth. The cleaned release preserves that projection in `HistoricalProjection`, but removes an old WPF-specific horizontal offset that belonged to the original screen layout rather than the measurement model.
+For a selected depth pixel, the historical implementation derived a 3-D point from pixel position and depth. The cleaned release preserves that projection in `HistoricalProjection`, including the recovered 20-pixel horizontal correction because its original rationale is not documented.
 
 The geometric calculations then use Euclidean 3-D distance, vector dot-product angle calculation, perimeter as the sum of four edges, and quadrilateral area as two Heron-formula triangles separated by diagonal AC.
 
