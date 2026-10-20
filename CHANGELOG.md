@@ -4,6 +4,8 @@ All notable changes to this cleaned research-software release will be documented
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-10-20
+
 ### Added
 
 - Portable measurement core independent of the Kinect SDK.

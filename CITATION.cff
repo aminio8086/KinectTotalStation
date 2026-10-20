@@ -4,6 +4,8 @@ message: >-
   HORA 2024 publication.
 title: Kinect Station
 type: software
+version: 1.0.0
+date-released: 2026-10-20
 license: Apache-2.0
 repository-code: https://github.com/aminio8086/KinectTotalStation-Relase
 authors:
